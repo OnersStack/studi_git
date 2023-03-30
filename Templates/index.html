@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="styleeshit" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
 </head>
@@ -11,13 +11,23 @@
     <!-- FIXME: Здесь смерть -->
     <main class="container">
         <form>
-            <label for="name">Имя</label>
-            <input type="text" id="name" name="имя" required>
-            <label for="name">Фамилия</label> 
-            <input type="text" id="name" name="фамилия" required>
-            <label for="name">Отчество</label> 
-            <input type="text" id="name" name="фамилия" required>
-            <button type="submit">Отпарвить</button>
+            <div class="row py-4 px-4">
+                <div class="col-sm-4">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" id="name" name="имя" required class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label for="name" class="form-label">Фамилия</label>
+                    <input type="text" id="name" name="имя" required class="form-control">
+                </div>
+                <div class="col-sm-4">
+                    <label for="name" class="form-label">Отчество</label>
+                    <input type="text" id="name" name="имя" required class="form-control">
+                </div>
+
+                <button type="submit" class="my-4 w-100 btn btn-primary btn-lg">Отпарвить</button>
+            </div>
+
         </form>
     </main>
 </body>
